@@ -1,0 +1,133 @@
+﻿<Window x:Class="BlackJackOne.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BlackJackOne"
+        mc:Ignorable="d"
+        Title="Black Jack" Height="747" Width="750" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="Images/Resources/StartMenuIcon.png">
+    <Window.Background>
+        <ImageBrush ImageSource="Images/Resources/Background.png" />
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Label Content="My Account" HorizontalAlignment="Left" Margin="116,35,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.546,0.208" Background="{x:Null}" FontFamily="Microsoft Sans Serif" FontWeight="Bold" FontSize="18">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1" />
+                    <GradientStop Color="#FFFFE804" />
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label Content="Wins" HorizontalAlignment="Left" Margin="343,35,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.546,0.208" Background="{x:Null}" FontFamily="Microsoft Sans Serif" FontWeight="Bold" FontSize="18">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1" />
+                    <GradientStop Color="#FFFFE804" />
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label Content="Losses" HorizontalAlignment="Left" Margin="533,35,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.546,0.208" Background="{x:Null}" FontFamily="Microsoft Sans Serif" FontWeight="Bold" FontSize="18">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1" />
+                    <GradientStop Color="#FFFFE804" />
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <TextBox x:Name="tbMyAccount" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="76" Margin="130,67,0,0" FontSize="18" Foreground="#FFFFE804" TextAlignment="Center">
+            <TextBox.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveCaptionTextColorKey}}" />
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="tbWins" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="76" Margin="330,67,0,0" FontSize="18" Foreground="#FFFFE804" TextAlignment="Center">
+            <TextBox.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveCaptionTextColorKey}}" />
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="tbLosses" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="76" Margin="530,67,0,0" FontSize="18" Foreground="#FFFFE804" TextAlignment="Center">
+            <TextBox.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveCaptionTextColorKey}}" />
+            </TextBox.Background>
+        </TextBox>
+        <Image x:Name="imgDealerCard1" HorizontalAlignment="Left" Height="95" Margin="168,150,0,0" VerticalAlignment="Top" Width="75" />
+        <Image x:Name="imgDealerCard2" HorizontalAlignment="Left" Height="95" Margin="198,150,0,0" VerticalAlignment="Top" Width="75" />
+        <Image x:Name="imgDealerCard3" HorizontalAlignment="Left" Height="95" Margin="228,150,0,0" VerticalAlignment="Top" Width="75" />
+        <Image x:Name="imgDealerCard4" HorizontalAlignment="Left" Height="95" Margin="258,150,0,0" VerticalAlignment="Top" Width="75" />
+        <Image x:Name="imgDealerCard5" HorizontalAlignment="Left" Height="95" Margin="288,150,0,0" VerticalAlignment="Top" Width="75" />
+        <Image x:Name="imgDealerCard6" HorizontalAlignment="Left" Height="95" Margin="318,150,0,0" VerticalAlignment="Top" Width="75" />
+
+        <Image x:Name="imgDeckCard1" HorizontalAlignment="Left" Height="95" Margin="516,150,0,0" VerticalAlignment="Top" Width="75" Source="Images/Cards/cardSkin.PNG" />
+        <Image x:Name="imgDeckCard2" HorizontalAlignment="Left" Height="95" Margin="531,135,0,0" VerticalAlignment="Top" Width="75" Source="Images/Cards/cardSkin.PNG" />
+        <Image x:Name="imgDeckCard3" HorizontalAlignment="Left" Height="95" Margin="546,120,0,0" VerticalAlignment="Top" Width="75" Source="Images/Cards/cardSkin.PNG" />
+
+        <Image x:Name="imgPlayerCard1" HorizontalAlignment="Left" Height="95" Margin="273,300,0,0" VerticalAlignment="Top" Width="75" />
+        <Image x:Name="imgPlayerCard2" HorizontalAlignment="Left" Height="95" Margin="303,300,0,0" VerticalAlignment="Top" Width="75" />
+        <Image x:Name="imgPlayerCard3" HorizontalAlignment="Left" Height="95" Margin="333,300,0,0" VerticalAlignment="Top" Width="75" />
+        <Image x:Name="imgPlayerCard4" HorizontalAlignment="Left" Height="95" Margin="363,300,0,0" VerticalAlignment="Top" Width="75" />
+        <Image x:Name="imgPlayerCard5" HorizontalAlignment="Left" Height="95" Margin="393,300,0,0" VerticalAlignment="Top" Width="75" />
+        <Image x:Name="imgPlayerCard6" HorizontalAlignment="Left" Height="95" Margin="423,300,0,0" VerticalAlignment="Top" Width="75" />
+
+        <Button x:Name="btOne" Click="btOne_Click" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,466,0,0" Height="75" FontSize="18" FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/Resources/coin1.gif" />
+            </Button.Background>
+        </Button>
+        <Button x:Name="btTen" Click="btTen_Click" Content="10" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="150,466,0,0" Height="75" FontSize="18" FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/Resources/coin2.gif" />
+            </Button.Background>
+        </Button>
+        <Button x:Name="btTwentyFive" Click="btTwentyFive_Click" Content="25" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="250,466,0,0" Height="75" FontSize="18" FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/Resources/coin3.gif" />
+            </Button.Background>
+        </Button>
+        <Button x:Name="btFifty" Click="btFifty_Click" Content="50" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="350,466,0,0" Height="75" FontSize="18" FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/Resources/coin4.gif" />
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="tbMyBet" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="76" Margin="456,488,0,0" FontSize="18" Foreground="#FFFFE804" TextAlignment="Center">
+            <TextBox.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveCaptionTextColorKey}}" />
+            </TextBox.Background>
+        </TextBox>
+        <Label Content="My Bet" HorizontalAlignment="Left" Margin="457,511,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.546,0.208" Background="{x:Null}" FontFamily="Microsoft Sans Serif" FontWeight="Bold" FontSize="18">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1" />
+                    <GradientStop Color="#FFFFE804" />
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Button x:Name="btClear" Click="btClear_Click" Content="Clear" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="576,484,0,0" FontSize="18" FontWeight="Bold" Height="40">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/Resources/ButtonSquare.gif" />
+            </Button.Background>
+        </Button>
+        <Button x:Name="btHit" Click="btHit_Click" Content="Hit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="122,606,0,0" FontSize="18" FontWeight="Bold" Height="40">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/Resources/ButtonRound.gif" />
+            </Button.Background>
+        </Button>
+        <Button x:Name="btStand" Click="btStand_Click" Content="Stand" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="322,606,0,0" FontSize="18" FontWeight="Bold" Height="40">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/Resources/ButtonRound.gif" />
+            </Button.Background>
+        </Button>
+        <Button x:Name="btDeal" Click="btDeal_Click" Content="Deal" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="522,606,0,0" FontSize="18" FontWeight="Bold" Height="40">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/Resources/ButtonRound.gif" />
+            </Button.Background>
+        </Button>
+        <Label Name="lblPlayerTotal" Background="White" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="252,300,0,0" RenderTransformOrigin="2.271,0.044" />
+        <TextBox x:Name="tbGameOver" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" Text="Dealer Won" VerticalAlignment="Top" Width="277" Margin="423,427,0,0" FontSize="26" Foreground="#FFFFE804" TextAlignment="Center">
+            <TextBox.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveCaptionTextColorKey}}" />
+            </TextBox.Background>
+        </TextBox>
+    </Grid>
+</Window>
